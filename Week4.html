@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piercing Inspirations</title>
+  <style>
+    /* General Reset and Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffb6c1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #881f4b;
+      font-size: 2.5em;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #ff69b4;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #ff85c1;
+    }
+
+    /* Introduction Section */
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      font-size: 1.2em;
+    }
+
+    /* Gallery Section using CSS Grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .piercing-image {
+      width: 100%;
+      border: 4px solid #ffc0cb;
+      border-radius: 12px;
+      padding: 10px;
+      background-color: white;
+      transition: transform 0.3s;
+    }
+
+    .piercing-image:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffe6f0;
+      border-top: 2px solid #ff99cc;
+      margin-top: 40px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      .intro {
+        padding: 10px;
+        font-size: 1.1em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav a {
+        padding: 10px;
+        font-size: 0.9em;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .intro {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Piercing Inspirations</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Gallery</a>
+    <a href="#">Styles</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="intro">
+    <p>Piercings are a beautiful way to express your individuality. Whether it's elegant ear cuffs, nose studs, or bold belly rings, explore a variety of styles and get inspired.</p>
+  </section>
+
+  <section class="gallery">
+    <img src="https://via.placeholder.com/300x300?text=Ear+Piercing" alt="Ear Piercing" class="piercing-image">
+    <img src="https://via.placeholder.com/300x300?text=Nose+Piercing" alt="Nose Piercing" class="piercing-image">
+    <img src="https://via.placeholder.com/300x300?text=Belly+Piercing" alt="Belly Piercing" class="piercing-image">
+    <img src="https://via.placeholder.com/300x300?text=Lip+Piercing" alt="Lip Piercing" class="piercing-image">
+  </section>
+
+  <footer>
+    <p>Made with 💖 for those who love style and self-expression.</p>
+  </footer>
+
+</body>
+</html>
